@@ -1,134 +1,107 @@
-/* Generated Application Styles */
+/* Your CSS styles here */
+/* Make it modern, responsive, and beautiful */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    line-height: 1.6;
+    margin: 0;
 }
 
-.container {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    margin: 20px 0;
-}
-
-h1 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2.5em;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-h2, h3 {
-    color: #444;
-    margin-top: 30px;
-}
-
-.content {
-    margin: 20px 0;
-    line-height: 1.8;
-    font-size: 1.1em;
-}
-
-.features {
-    background: linear-gradient(135deg, #e8f4f8 0%, #f0f8ff 100%);
-    padding: 25px;
-    border-radius: 10px;
-    margin: 30px 0;
-    border-left: 5px solid #667eea;
-}
-
-.code-block {
-    background: #f8f9fa;
-    padding: 20px;
+.calculator {
+    background-color: #fff;
     border-radius: 8px;
-    border: 1px solid #e9ecef;
-    margin: 20px 0;
-    font-family: 'Courier New', monospace;
-    overflow-x: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 90%; /* Responsive width */
 }
 
-.btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 12px 24px;
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    text-align: right;
     border: none;
-    border-radius: 25px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+.button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1em;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    outline: none;
+    transition: background-color 0.2s ease;
 }
 
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+.button:hover {
+    background-color: #ccc;
 }
 
-.btn:active {
-    transform: translateY(0);
+.number {
+    background-color: #fff;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.operator {
+    background-color: #f9f9f9;
 }
 
-li {
-    padding: 8px 0;
-    position: relative;
-    padding-left: 25px;
+.function {
+    background-color: #e9e9e9;
 }
 
-li::before {
-    content: "✨";
-    position: absolute;
-    left: 0;
+.equals {
+    grid-column: span 2;
+    background-color: #4CAF50;
+    color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 20px;
-        margin: 10px;
+.equals:hover {
+    background-color: #3e8e41;
+}
+
+.clear {
+    background-color: #f44336;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #da190b;
+}
+
+.delete {
+    background-color: #ff9800;
+    color: white;
+}
+
+.delete:hover {
+    background-color: #f57c00;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .calculator {
+        width: 95%;
     }
-    
-    h1 {
-        font-size: 2em;
-    }
-    
-    .btn {
-        width: 100%;
-        margin-top: 10px;
-    }
-}
 
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-    .btn {
-        transition: none;
+    .buttons {
+        grid-template-columns: repeat(3, 1fr);
     }
-}
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    .container {
-        background: #1a1a1a;
-        color: #e0e0e0;
-    }
-    
-    .code-block {
-        background: #2d2d2d;
-        color: #e0e0e0;
-        border-color: #444;
+    .equals {
+        grid-column: span 3;
     }
 }
