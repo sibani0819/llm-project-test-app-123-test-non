@@ -4,61 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A powerful and accessible scientific calculator web application.">
-    <meta name="keywords" content="calculator, scientific calculator, web calculator, math, trigonometry, logarithms">
-    <title>Scientific Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="calculator, scientific calculator, web calculator, math, trigonometry, functions">
+    <meta name="author" content="GPT-3">
+    <title>SciCalc - Scientific Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16v-6h6v-2h-6V6h-2v6H6v2h6z'/></svg>" type="image/svg+xml">
 </head>
 <body>
-    <header>
-        <h1>Scientific Calculator</h1>
-    </header>
+    <div class="calculator">
+        <input type="text" id="display" readonly aria-label="Calculator display">
+        <div class="buttons">
+            <button aria-label="Clear" class="button clear">C</button>
+            <button aria-label="Delete" class="button delete">Del</button>
+            <button aria-label="Percent" class="button function">%</button>
+            <button aria-label="Divide" class="button operator">/</button>
 
-    <main>
-        <div class="calculator-container">
-            <input type="text" id="display" readonly aria-label="Calculator display">
-            <div class="button-grid">
-                <button aria-label="Clear" class="button clear">C</button>
-                <button aria-label="Delete" class="button delete">Del</button>
-                <button aria-label="Percent" class="button"> % </button>
-                <button aria-label="Divide" class="button operator">/</button>
+            <button aria-label="Seven" class="button number">7</button>
+            <button aria-label="Eight" class="button number">8</button>
+            <button aria-label="Nine" class="button number">9</button>
+            <button aria-label="Multiply" class="button operator">*</button>
 
-                <button aria-label="Seven" class="button number">7</button>
-                <button aria-label="Eight" class="button number">8</button>
-                <button aria-label="Nine" class="button number">9</button>
-                <button aria-label="Multiply" class="button operator">*</button>
+            <button aria-label="Four" class="button number">4</button>
+            <button aria-label="Five" class="button number">5</button>
+            <button aria-label="Six" class="button number">6</button>
+            <button aria-label="Subtract" class="button operator">-</button>
 
-                <button aria-label="Four" class="button number">4</button>
-                <button aria-label="Five" class="button number">5</button>
-                <button aria-label="Six" class="button number">6</button>
-                <button aria-label="Subtract" class="button operator">-</button>
+            <button aria-label="One" class="button number">1</button>
+            <button aria-label="Two" class="button number">2</button>
+            <button aria-label="Three" class="button number">3</button>
+            <button aria-label="Add" class="button operator">+</button>
 
-                <button aria-label="One" class="button number">1</button>
-                <button aria-label="Two" class="button number">2</button>
-                <button aria-label="Three" class="button number">3</button>
-                <button aria-label="Add" class="button operator">+</button>
+            <button aria-label="Zero" class="button number">0</button>
+            <button aria-label="Decimal" class="button decimal">.</button>
+            <button aria-label="Equals" class="button equals">=</button>
 
-                <button aria-label="Zero" class="button number">0</button>
-                <button aria-label="Decimal" class="button">.</button>
-                <button aria-label="Equals" class="button equals">=</button>
-
-                <button aria-label="Pi" class="button function">π</button>
-                <button aria-label="Sine" class="button function">sin</button>
-                <button aria-label="Cosine" class="button function">cos</button>
-                <button aria-label="Tangent" class="button function">tan</button>
-                <button aria-label="Logarithm" class="button function">log</button>
-                <button aria-label="Natural Logarithm" class="button function">ln</button>
-                <button aria-label="Exponent" class="button function">^</button>
-                <button aria-label="Square Root" class="button function">√</button>
-            </div>
+            <button aria-label="Pi" class="button function">π</button>
+            <button aria-label="Sine" class="button function">sin</button>
+            <button aria-label="Cosine" class="button function">cos</button>
+            <button aria-label="Tangent" class="button function">tan</button>
+            <button aria-label="Logarithm" class="button function">log</button>
+            <button aria-label="Square Root" class="button function">√</button>
+            <button aria-label="Power" class="button function">^</button>
+            <button aria-label="Parenthesis Open" class="button function">(</button>
+            <button aria-label="Parenthesis Close" class="button function">)</button>
         </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Scientific Calculator</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
