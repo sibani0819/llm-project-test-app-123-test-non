@@ -1,7 +1,7 @@
-# Create a simple calculator application with basic arithmetic operations
+# Add scientific calculator functions and improve the design
 
 ## Description
-Create a simple calculator application with basic arithmetic operations
+Add scientific calculator functions and improve the design
 
 ## Setup
 1. Clone this repository
@@ -9,9 +9,9 @@ Create a simple calculator application with basic arithmetic operations
 3. No additional setup required
 
 ## Features
-- Application is responsive
-- Calculator performs basic operations
-- UI is user-friendly
+- Scientific functions work
+- Design is improved
+- Performance is optimized
 
 ## License
 MIT License - see LICENSE file for details.
