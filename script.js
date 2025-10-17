@@ -3,7 +3,7 @@ console.log('🚀 Generated application loaded successfully');
 console.log('📝 Brief:', `
 Create a complete, production-ready web application based on this brief:
 
-BRIEF: Create a simple ca...`);
+BRIEF: Add scientific cal...`);
 
 // Application functionality
 function testFunctionality() {
