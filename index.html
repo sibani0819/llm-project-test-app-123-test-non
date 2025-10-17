@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A powerful and accessible scientific calculator web application.">
-    <meta name="keywords" content="calculator, scientific calculator, web calculator, math, trigonometry, logarithm, exponent">
+    <meta name="keywords" content="calculator, scientific calculator, web calculator, math, trigonometry, logarithms">
     <title>Scientific Calculator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -18,33 +18,38 @@
         <div class="calculator-container">
             <input type="text" id="display" readonly aria-label="Calculator display">
             <div class="button-grid">
-                <button data-value="7">7</button>
-                <button data-value="8">8</button>
-                <button data-value="9">9</button>
-                <button data-value="/">/</button>
-                <button data-value="4">4</button>
-                <button data-value="5">5</button>
-                <button data-value="6">6</button>
-                <button data-value="*">*</button>
-                <button data-value="1">1</button>
-                <button data-value="2">2</button>
-                <button data-value="3">3</button>
-                <button data-value="-">-</button>
-                <button data-value="0">0</button>
-                <button data-value=".">.</button>
-                <button data-value="=">=</button>
-                <button data-value="+">+</button>
-                <button data-value="sin">sin</button>
-                <button data-value="cos">cos</button>
-                <button data-value="tan">tan</button>
-                <button data-value="log">log</button>
-                <button data-value="ln">ln</button>
-                <button data-value="^">^</button>
-                <button data-value="sqrt">√</button>
-                <button data-value="pi">π</button>
-                <button data-value="e">e</button>
-                <button id="clear">C</button>
-                <button id="backspace">⌫</button>
+                <button aria-label="Clear" class="button clear">C</button>
+                <button aria-label="Delete" class="button delete">Del</button>
+                <button aria-label="Percent" class="button"> % </button>
+                <button aria-label="Divide" class="button operator">/</button>
+
+                <button aria-label="Seven" class="button number">7</button>
+                <button aria-label="Eight" class="button number">8</button>
+                <button aria-label="Nine" class="button number">9</button>
+                <button aria-label="Multiply" class="button operator">*</button>
+
+                <button aria-label="Four" class="button number">4</button>
+                <button aria-label="Five" class="button number">5</button>
+                <button aria-label="Six" class="button number">6</button>
+                <button aria-label="Subtract" class="button operator">-</button>
+
+                <button aria-label="One" class="button number">1</button>
+                <button aria-label="Two" class="button number">2</button>
+                <button aria-label="Three" class="button number">3</button>
+                <button aria-label="Add" class="button operator">+</button>
+
+                <button aria-label="Zero" class="button number">0</button>
+                <button aria-label="Decimal" class="button">.</button>
+                <button aria-label="Equals" class="button equals">=</button>
+
+                <button aria-label="Pi" class="button function">π</button>
+                <button aria-label="Sine" class="button function">sin</button>
+                <button aria-label="Cosine" class="button function">cos</button>
+                <button aria-label="Tangent" class="button function">tan</button>
+                <button aria-label="Logarithm" class="button function">log</button>
+                <button aria-label="Natural Logarithm" class="button function">ln</button>
+                <button aria-label="Exponent" class="button function">^</button>
+                <button aria-label="Square Root" class="button function">√</button>
             </div>
         </div>
     </main>
@@ -53,6 +58,7 @@
         <p>&copy; 2023 Scientific Calculator</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
